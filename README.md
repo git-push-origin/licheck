@@ -11,7 +11,7 @@
 
 ## Features
 
-- **Zero dependencies** — pure Node.js 14.14+ (`fs`, `path`, `crypto` only)
+- **Zero dependencies** — pure Node.js 14.14+ (Linux, Windows), Node.js 16+ (macOS) (`fs`, `path`, `crypto` only)
 - **Dual CJS / ESM** — works with `require()` and `import` out of the box, full TypeScript declarations included
 - **Multi-source detection** — reads `package.json` fields and heuristically detects licenses from `LICENSE` file text
 - **SPDX normalization** — maps common aliases (`"The MIT License"`, `"Apache 2.0"`, etc.) to canonical SPDX identifiers
