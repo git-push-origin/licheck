@@ -1,0 +1,65 @@
+{
+  "name": "licheck",
+  "version": "0.1.0",
+  "description": "Scan node_modules and report licenses for all installed packages — zero dependencies.",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./lib/license": {
+      "types": "./types/lib/license.d.ts",
+      "import": "./lib/license.mjs",
+      "require": "./lib/license.js"
+    },
+    "./lib/scanner": {
+      "types": "./types/lib/scanner.d.ts",
+      "import": "./lib/scanner.mjs",
+      "require": "./lib/scanner.js"
+    },
+    "./lib/reporter": {
+      "types": "./types/lib/reporter.d.ts",
+      "import": "./lib/reporter.mjs",
+      "require": "./lib/reporter.js"
+    }
+  },
+  "bin": {
+    "licheck": "./bin/licheck.js"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "lib/",
+    "bin/",
+    "types/",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "test": "node test/index.test.js",
+    "prepublishOnly": "node test/index.test.js"
+  },
+  "keywords": ["license", "checker", "npm", "audit", "compliance", "oss"],
+  "author": { 
+    "name": "Dmitry Egorov", 
+    "url": "https://github.com/git-push-origin"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/git-push-origin/licheck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/git-push-origin/licheck/issues"
+  },
+  "homepage": "https://github.com/git-push-origin/licheck#readme",
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.14.0"
+  }
+}

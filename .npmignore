@@ -1,0 +1,5 @@
+test/
+*.test.js
+.gitignore
+.DS_Store
+*.log
